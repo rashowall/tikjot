@@ -1,0 +1,58 @@
+name: Bug report
+description: Something in tikjot doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Issues are for bugs only.
+        Security problem? Please don't file it here — see SECURITY.md.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What did you do, what did you expect, and what happened instead?
+      placeholder: "I sent Thursday to Jira, expected 3 worklogs, got 4 (PMO-415 twice)."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: tikjot version
+      description: Settings › General › About
+      placeholder: "0.9.0 (123)"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "macOS 15.6"
+    validations:
+      required: true
+  - type: dropdown
+    id: jira
+    attributes:
+      label: Jira
+      options:
+        - Jira Cloud
+        - Jira Data Center / Server
+        - Both
+        - Not connected
+    validations:
+      required: true
+  - type: dropdown
+    id: network
+    attributes:
+      label: Network
+      description: Only if it's about connecting to Jira.
+      options:
+        - Not relevant
+        - Office network
+        - VPN
+        - Home / other, no VPN
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics (optional)
+      description: Settings › General › Export diagnostics — attach the file. It contains no descriptions, URLs or tokens.
