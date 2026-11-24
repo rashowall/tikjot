@@ -1,0 +1,20 @@
+{
+  "country": "UA",
+  "name": { "en": "Ukraine", "sk": "Ukrajina", "uk": "Україна" },
+  "source": "Кодекс законів про працю України (KZpP), art. 73 (holidays) and art. 67 (weekend holiday → next working day); suspended under martial law (since 24 Feb 2022) by Law No. 2136-IX 'Про організацію трудових відносин в умовах воєнного стану', art. 12. Martial law still in force in 2026. Verified 2026-10-04.",
+  "notes": "While martial law lasts, public holidays are NOT days off, so after January 2022 this list is empty (8 March 2022 is not included) (employers may still give days off — add them as company days). The pre-war list (2018–2021, plus 1 and 7 January 2022) is kept for history; years before 2018 are not covered. When martial law ends the post-2023 calendar (Christmas only on 25 Dec, Statehood Day 15 Jul, Defenders' Day 1 Oct) will need a data update.",
+  "substitute": "nextWorkday",
+  "holidays": [
+    { "id": "new-year",      "rule": { "fixed": "01-01" }, "validFrom": 2018, "validTo": 2022, "name": { "en": "New Year's Day", "sk": "Nový rok", "uk": "Новий рік" } },
+    { "id": "christmas-jul", "rule": { "fixed": "01-07" }, "validFrom": 2018, "validTo": 2022, "name": { "en": "Orthodox Christmas", "sk": "Vianoce (pravoslávne)", "uk": "Різдво Христове (за юліанським календарем)" } },
+    { "id": "womens-day",    "rule": { "fixed": "03-08" }, "validFrom": 2018, "validTo": 2021, "name": { "en": "International Women's Day", "sk": "Medzinárodný deň žien", "uk": "Міжнародний жіночий день" } },
+    { "id": "easter",        "rule": { "orthodoxEaster": 0 },  "validFrom": 2018, "validTo": 2021, "name": { "en": "Orthodox Easter (day off on Monday)", "sk": "Veľká noc (pravoslávna, voľno v pondelok)", "uk": "Великдень" } },
+    { "id": "labour-day",    "rule": { "fixed": "05-01" }, "validFrom": 2018, "validTo": 2021, "name": { "en": "Labour Day", "sk": "Sviatok práce", "uk": "День праці" } },
+    { "id": "victory-day",   "rule": { "fixed": "05-09" }, "validFrom": 2018, "validTo": 2021, "name": { "en": "Victory Day over Nazism in World War II", "sk": "Deň víťazstva nad nacizmom", "uk": "День перемоги над нацизмом у Другій світовій війні" } },
+    { "id": "trinity",       "rule": { "orthodoxEaster": 49 }, "validFrom": 2018, "validTo": 2021, "name": { "en": "Orthodox Pentecost (day off on Monday)", "sk": "Turíce (pravoslávne, voľno v pondelok)", "uk": "Трійця" } },
+    { "id": "constitution",  "rule": { "fixed": "06-28" }, "validFrom": 2018, "validTo": 2021, "name": { "en": "Constitution Day", "sk": "Deň Ústavy", "uk": "День Конституції України" } },
+    { "id": "independence",  "rule": { "fixed": "08-24" }, "validFrom": 2018, "validTo": 2021, "name": { "en": "Independence Day", "sk": "Deň nezávislosti", "uk": "День незалежності України" } },
+    { "id": "defenders-day", "rule": { "fixed": "10-14" }, "validFrom": 2018, "validTo": 2021, "name": { "en": "Defenders of Ukraine Day", "sk": "Deň obrancov Ukrajiny", "uk": "День захисника України" } },
+    { "id": "christmas",     "rule": { "fixed": "12-25" }, "validFrom": 2018, "validTo": 2021, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "uk": "Різдво Христове (за григоріанським календарем)" } }
+  ]
+}

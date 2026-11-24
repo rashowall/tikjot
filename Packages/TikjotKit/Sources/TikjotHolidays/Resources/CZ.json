@@ -1,0 +1,21 @@
+{
+  "country": "CZ",
+  "name": { "en": "Czechia", "sk": "Česko", "cs": "Česko" },
+  "source": "Zákon č. 245/2000 Sb. o státních svátcích, o ostatních svátcích, o významných dnech a o dnech pracovního klidu, as amended (Good Friday by zákon č. 359/2015 Sb., from 2016). Verified 2026-10-04.",
+  "notes": "Only days off (státní a ostatní svátky = dny pracovního klidu). Easter Sunday is left out (always a Sunday).",
+  "holidays": [
+    { "id": "new-year",        "rule": { "fixed": "01-01" }, "name": { "en": "Restoration Day of the Independent Czech State; New Year's Day", "sk": "Deň obnovy samostatného českého štátu; Nový rok", "cs": "Den obnovy samostatného českého státu; Nový rok" } },
+    { "id": "good-friday",     "rule": { "easter": -2 }, "validFrom": 2016, "name": { "en": "Good Friday", "sk": "Veľký piatok", "cs": "Velký pátek" } },
+    { "id": "easter-monday",   "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "cs": "Velikonoční pondělí" } },
+    { "id": "labour-day",      "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "cs": "Svátek práce" } },
+    { "id": "victory-day",     "rule": { "fixed": "05-08" }, "name": { "en": "Liberation Day", "sk": "Deň víťazstva", "cs": "Den vítězství" } },
+    { "id": "cyril-methodius", "rule": { "fixed": "07-05" }, "name": { "en": "Saints Cyril and Methodius Day", "sk": "Sviatok slovanských vierozvestov Cyrila a Metoda", "cs": "Den slovanských věrozvěstů Cyrila a Metoděje" } },
+    { "id": "jan-hus",         "rule": { "fixed": "07-06" }, "name": { "en": "Jan Hus Day", "sk": "Deň upálenia majstra Jána Husa", "cs": "Den upálení mistra Jana Husa" } },
+    { "id": "statehood",       "rule": { "fixed": "09-28" }, "name": { "en": "St. Wenceslas Day (Czech Statehood Day)", "sk": "Deň českej štátnosti", "cs": "Den české státnosti" } },
+    { "id": "independence",    "rule": { "fixed": "10-28" }, "name": { "en": "Independent Czechoslovak State Day", "sk": "Deň vzniku samostatného československého štátu", "cs": "Den vzniku samostatného československého státu" } },
+    { "id": "freedom-day",     "rule": { "fixed": "11-17" }, "name": { "en": "Struggle for Freedom and Democracy Day", "sk": "Deň boja za slobodu a demokraciu", "cs": "Den boje za svobodu a demokracii" } },
+    { "id": "christmas-eve",   "rule": { "fixed": "12-24" }, "name": { "en": "Christmas Eve", "sk": "Štedrý deň", "cs": "Štědrý den" } },
+    { "id": "christmas",       "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "cs": "1. svátek vánoční" } },
+    { "id": "st-stephen",      "rule": { "fixed": "12-26" }, "name": { "en": "St. Stephen's Day", "sk": "Druhý sviatok vianočný", "cs": "2. svátek vánoční" } }
+  ]
+}

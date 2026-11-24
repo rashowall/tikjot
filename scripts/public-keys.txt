@@ -1,0 +1,15 @@
+# Allowlist for scripts/check-public-tree.py: Jira-key-like tokens that may appear in the public code.
+# Only INVENTED keys and harmless words. Never add a real project key from your Jira — replace it with an invented one.
+
+# Invented Jira project keys (demo data, tests, docs)
+ABC WEB PMO OPS PAY FIN INT DIV VND ADM QA CP MIG KEY NOPE A A_2 SHOP MKT LAB HD PORTAL
+OPS_DESK OPSDESK PAY_PLATFORM PAYPLATFORM OPS_INFRA_UPGRADE
+
+# Not Jira keys: protocols, formats, codes, labels
+GET POST PUT DELETE UTF AES GPL OFL RGB RGBA UTC TZ VPN DMG PAT GRDB VACUUM TIKJOTBK TIKJOTSA LEI16
+A0000000 D0000000 EEEE EEE LLLL LLL W40 W41 SNAPSHOT_RECORD SNAPSHOT_SKIP PASS FAIL INFO ERROR OK NONE
+DAY END TASK BILLABLE EXPECTED FOND FUND FROM KEYS NOTE PROJECT STATUS TO WORKED RUNNING TODAY
+# Slovak UI labels in upper case (snapshot/UI tests)
+KONIEC OD NAPOSLEDY PROJEKT PN STAV DO DNES
+# Country and language codes (holidays, localization)
+SK CZ DE AT CH PL HU SI HR RO UA GB UK IE US FR BE NL ES PT IT DK SE NO FI JP

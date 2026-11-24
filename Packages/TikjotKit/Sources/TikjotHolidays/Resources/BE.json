@@ -1,0 +1,18 @@
+{
+  "country": "BE",
+  "name": { "en": "Belgium", "sk": "Belgicko", "fr": "Belgique", "nl": "België" },
+  "source": "Loi du 4 janvier 1974 relative aux jours fériés / Wet van 4 januari 1974 betreffende de feestdagen, and Arrêté royal du 18 avril 1974 art. 1; emploi.belgique.be 'Jours fériés'. Verified 2026-10-04.",
+  "notes": "Easter Sunday and Whit Sunday are left out (always Sundays). A holiday on a Sunday or usual day of rest is replaced by another day off chosen by the company or sector (decided before 15 December) — add it as a company day. Community holidays (27 Sep, 11 Jul, 15 Nov) are off only in some sectors.",
+  "holidays": [
+    { "id": "new-year",      "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "fr": "Jour de l'an", "nl": "Nieuwjaar" } },
+    { "id": "easter-monday", "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "fr": "Lundi de Pâques", "nl": "Paasmaandag" } },
+    { "id": "labour-day",    "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "fr": "Fête du Travail", "nl": "Feest van de Arbeid" } },
+    { "id": "ascension",     "rule": { "easter": 39 },     "name": { "en": "Ascension Day", "sk": "Nanebovstúpenie Pána", "fr": "Ascension", "nl": "Onze-Lieve-Heer-Hemelvaart" } },
+    { "id": "whit-monday",   "rule": { "easter": 50 },     "name": { "en": "Whit Monday", "sk": "Svätodušný pondelok", "fr": "Lundi de Pentecôte", "nl": "Pinkstermaandag" } },
+    { "id": "national-day",  "rule": { "fixed": "07-21" }, "name": { "en": "Belgian National Day", "sk": "Belgický štátny sviatok", "fr": "Fête nationale", "nl": "Nationale feestdag" } },
+    { "id": "assumption",    "rule": { "fixed": "08-15" }, "name": { "en": "Assumption of Mary", "sk": "Nanebovzatie Panny Márie", "fr": "Assomption", "nl": "Onze-Lieve-Vrouw-Hemelvaart" } },
+    { "id": "all-saints",    "rule": { "fixed": "11-01" }, "name": { "en": "All Saints' Day", "sk": "Sviatok Všetkých svätých", "fr": "Toussaint", "nl": "Allerheiligen" } },
+    { "id": "armistice",     "rule": { "fixed": "11-11" }, "name": { "en": "Armistice Day", "sk": "Deň prímeria", "fr": "Armistice", "nl": "Wapenstilstand" } },
+    { "id": "christmas",     "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "fr": "Noël", "nl": "Kerstmis" } }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "country": "US",
+  "name": { "en": "United States", "sk": "Spojené štáty" },
+  "source": "5 U.S.C. § 6103 (federal holidays; Juneteenth added by Pub. L. 117-17 in 2021) and Executive Order 11582 (Saturday → preceding Friday, Sunday → following Monday); opm.gov Federal Holidays. Verified 2026-10-04.",
+  "notes": "Federal holidays only (federal employees; many private employers follow a subset). States add their own (e.g. Cesar Chavez Day, Patriots' Day, day after Thanksgiving) — add them as company days. Inauguration Day (DC area only) is not included. A 1 January on a Saturday is observed on 31 December of the previous year.",
+  "substitute": "nearestWeekday",
+  "holidays": [
+    { "id": "new-year",     "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok" } },
+    { "id": "mlk",          "rule": { "nthWeekday": { "month": 1, "weekday": 1, "n": 3 } },  "name": { "en": "Birthday of Martin Luther King, Jr.", "sk": "Narodeniny Martina Luthera Kinga" } },
+    { "id": "washington",   "rule": { "nthWeekday": { "month": 2, "weekday": 1, "n": 3 } },  "name": { "en": "Washington's Birthday", "sk": "Narodeniny Georgea Washingtona" } },
+    { "id": "memorial",     "rule": { "nthWeekday": { "month": 5, "weekday": 1, "n": -1 } }, "name": { "en": "Memorial Day", "sk": "Deň pamiatky padlých" } },
+    { "id": "juneteenth",   "rule": { "fixed": "06-19" }, "validFrom": 2021, "name": { "en": "Juneteenth National Independence Day", "sk": "Juneteenth (Deň oslobodenia otrokov)" } },
+    { "id": "independence", "rule": { "fixed": "07-04" }, "name": { "en": "Independence Day", "sk": "Deň nezávislosti" } },
+    { "id": "labor",        "rule": { "nthWeekday": { "month": 9, "weekday": 1, "n": 1 } },  "name": { "en": "Labor Day", "sk": "Sviatok práce" } },
+    { "id": "columbus",     "rule": { "nthWeekday": { "month": 10, "weekday": 1, "n": 2 } }, "name": { "en": "Columbus Day", "sk": "Kolumbov deň" } },
+    { "id": "veterans",     "rule": { "fixed": "11-11" }, "name": { "en": "Veterans Day", "sk": "Deň veteránov" } },
+    { "id": "thanksgiving", "rule": { "nthWeekday": { "month": 11, "weekday": 4, "n": 4 } }, "name": { "en": "Thanksgiving Day", "sk": "Deň vďakyvzdania" } },
+    { "id": "christmas",    "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Vianoce" } }
+  ]
+}

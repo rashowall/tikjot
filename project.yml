@@ -1,0 +1,199 @@
+name: tikjot
+options:
+  bundleIdPrefix: com.tikjot
+  deploymentTarget:
+    macOS: "14.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "15"
+    DEVELOPMENT_TEAM: UPB9VSQ76D
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_HARDENED_RUNTIME: YES
+    SWIFT_STRICT_CONCURRENCY: complete
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+    # App Group shared by the app and its widget (Info.plist key TikjotAppGroup + widget entitlements).
+    TIKJOT_APP_GROUP: com.tikjot.mac
+    # Sparkle appcast (Info.plist SUFeedURL). The one place to change when the releases repo is decided.
+    TIKJOT_FEED_URL: https://github.com/rashowall/tikjot/releases/latest/download/appcast.xml
+    # Sparkle EdDSA public key (Info.plist SUPublicEDKey); the private key is in the release Mac's login Keychain.
+    TIKJOT_SPARKLE_PUBLIC_KEY: eOaoLovp/gMSyWawE3NkPtKhSjmAWG/ueJMPknxzdzo=
+  configs:
+    Debug:
+      # Dev/demo/test builds get their own group, so they never read or write the everyday tikjot's widget data.
+      TIKJOT_APP_GROUP: com.tikjot.mac.dev
+    Release:
+      # No com.apple.security.get-task-allow in Release (no debugger attach / task-port access); hardened runtime stays on.
+      CODE_SIGN_INJECT_BASE_ENTITLEMENTS: NO
+      # Distribution signing (app + widget): Developer ID, secure timestamp, no provisioning profile — the only
+      # restricted-looking entitlement is the App Group, and team-prefixed groups ($(TeamIdentifierPrefix)…) are
+      # valid on macOS without one. Notarized by scripts/release.sh. Debug stays Automatic / Apple Development.
+      CODE_SIGN_STYLE: Manual
+      CODE_SIGN_IDENTITY: "Developer ID Application"
+      OTHER_CODE_SIGN_FLAGS: --timestamp
+      PROVISIONING_PROFILE_SPECIFIER: ""
+packages:
+packages:
+  TikjotKit:
+    path: Packages/TikjotKit
+  # Updates (Release builds only start the updater). Pinned exactly; bump deliberately.
+  Sparkle:
+    url: https://github.com/sparkle-project/Sparkle
+    exactVersion: 2.10.0
+targets:
+  tikjot:
+    type: application
+    platform: macOS
+    sources:
+      - path: App/Sources
+      - path: Shared
+      - path: App/Resources
+    dependencies:
+      - package: TikjotKit
+        product: TikjotDomain
+      - package: TikjotKit
+        product: TikjotHolidays
+      - package: TikjotKit
+        product: TikjotPersistence
+      - package: TikjotKit
+        product: JiraKit
+      - package: TikjotKit
+        product: SyncEngine
+      - package: TikjotKit
+        product: TikjotSuggestions
+      - package: Sparkle
+      - target: tikjotWidget
+        embed: true
+        codeSign: true
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: tikjot
+        CFBundleName: tikjot
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSApplicationCategoryType: public.app-category.productivity
+        LSMinimumSystemVersion: "14.0"
+        ATSApplicationFontsPath: "."
+        NSHumanReadableCopyright: "© 2026 Martin Suster"
+        CFBundleURLTypes:
+          - CFBundleURLName: com.tikjot.mac
+            CFBundleURLSchemes: [tikjot]
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [en, sk]
+        NSSupportsAutomaticTermination: false
+        NSSupportsSuddenTermination: false
+        # One tikjot per Mac: a second user session can't start its own copy over the same data.
+        LSMultipleInstancesProhibited: true
+        TikjotAppGroup: $(TeamIdentifierPrefix)$(TIKJOT_APP_GROUP)
+        # Sparkle 2 (sandboxed): daily check against GitHub, no first-launch prompt, nothing about the Mac sent,
+        # installs only after the user confirms. The installer runs via Sparkle's XPC launcher service (the
+        # mach-lookup exceptions in tikjot.entitlements); downloads use the app's own network.client.
+        SUFeedURL: $(TIKJOT_FEED_URL)
+        SUPublicEDKey: $(TIKJOT_SPARKLE_PUBLIC_KEY)
+        SUEnableAutomaticChecks: true
+        SUScheduledCheckInterval: 86400
+        SUEnableSystemProfiling: false
+        SUAllowsAutomaticUpdates: false
+        SUAutomaticallyUpdate: false
+        SUEnableInstallerLauncherService: true
+    settings:
+      base:
+        CODE_SIGN_ENTITLEMENTS: App/tikjot.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: com.tikjot.mac
+        PRODUCT_NAME: tikjot
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        COMBINE_HIDPI_IMAGES: YES
+      configs:
+        Debug:
+          CODE_SIGN_ENTITLEMENTS: App/tikjot-debug.entitlements
+          # Own identity for dev/demo/test builds: own sandbox container + Keychain, so tests and captures
+          # never quit or touch the tikjot you use every day (Release = com.tikjot.mac).
+          PRODUCT_BUNDLE_IDENTIFIER: com.tikjot.mac.dev
+  tikjotWidget:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: Widget/Sources
+      - path: Widget/Resources
+      - path: Shared
+      - path: App/Resources/Colors.xcassets
+      - path: App/Resources/Illustrations.xcassets
+      - path: App/Resources/Assets.xcassets
+    info:
+      path: Widget/Info.plist
+      properties:
+        CFBundleDisplayName: tikjot
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+        TikjotAppGroup: $(TeamIdentifierPrefix)$(TIKJOT_APP_GROUP)
+    entitlements:
+      path: Widget/tikjotWidget.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.application-groups:
+          - $(TeamIdentifierPrefix)$(TIKJOT_APP_GROUP)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tikjot.mac.widget
+        PRODUCT_NAME: tikjotWidget
+        SKIP_INSTALL: YES
+      configs:
+        Debug:
+          PRODUCT_BUNDLE_IDENTIFIER: com.tikjot.mac.dev.widget
+  tikjotTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: AppTests
+        excludes: ["__Snapshots__"]
+      # Snapshot references, copied into the bundle as a folder (the sandboxed host can't read the repo).
+      - path: AppTests/__Snapshots__
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - target: tikjot
+    settings:
+      base:
+        BUNDLE_LOADER: $(TEST_HOST)
+        TEST_HOST: $(BUILT_PRODUCTS_DIR)/tikjot.app/Contents/MacOS/tikjot
+        GENERATE_INFOPLIST_FILE: YES
+  tikjotUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources: [UITests]
+    dependencies:
+      - target: tikjot
+    settings:
+      base:
+        TEST_TARGET_NAME: tikjot
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  tikjot:
+    build:
+      targets:
+        tikjot: all
+        tikjotTests: [test]
+        tikjotUITests: [test]
+    test:
+      config: Debug
+      # Deterministic hosted tests (snapshots): English strings, en_GB formats, fixed time zone.
+      commandLineArguments:
+        "-AppleLanguages (en)": true
+        "-AppleLocale en_GB": true
+      environmentVariables:
+        TZ: Europe/Bratislava
+        SWIFT_DETERMINISTIC_HASHING: "1"
+      targets:
+        - name: tikjotTests
+          parallelizable: false
+        - name: tikjotUITests
+          parallelizable: false
+    run:
+      config: Debug

@@ -1,0 +1,19 @@
+{
+  "country": "FR",
+  "name": { "en": "France", "sk": "Francúzsko", "fr": "France" },
+  "source": "Code du travail, art. L3133-1 (jours fériés) and L3133-7 (journée de solidarité); service-public.fr 'Jours fériés'. Verified 2026-10-04.",
+  "notes": "Only 1 May is a mandatory paid day off by law; the others are off by collective agreement or custom, which is the usual case. Whit Monday is often the 'journée de solidarité' (worked) — if so, remove it with a company day. Alsace-Moselle adds Good Friday and 26 December; overseas departments add Abolition of Slavery Day.",
+  "holidays": [
+    { "id": "new-year",      "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "fr": "Jour de l'an" } },
+    { "id": "easter-monday", "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "fr": "Lundi de Pâques" } },
+    { "id": "labour-day",    "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "fr": "Fête du Travail" } },
+    { "id": "victory-day",   "rule": { "fixed": "05-08" }, "name": { "en": "Victory in Europe Day", "sk": "Deň víťazstva", "fr": "Victoire 1945" } },
+    { "id": "ascension",     "rule": { "easter": 39 },     "name": { "en": "Ascension Day", "sk": "Nanebovstúpenie Pána", "fr": "Ascension" } },
+    { "id": "whit-monday",   "rule": { "easter": 50 },     "name": { "en": "Whit Monday", "sk": "Svätodušný pondelok", "fr": "Lundi de Pentecôte" } },
+    { "id": "bastille-day",  "rule": { "fixed": "07-14" }, "name": { "en": "Bastille Day", "sk": "Štátny sviatok Francúzska (Dobytie Bastily)", "fr": "Fête nationale" } },
+    { "id": "assumption",    "rule": { "fixed": "08-15" }, "name": { "en": "Assumption of Mary", "sk": "Nanebovzatie Panny Márie", "fr": "Assomption" } },
+    { "id": "all-saints",    "rule": { "fixed": "11-01" }, "name": { "en": "All Saints' Day", "sk": "Sviatok Všetkých svätých", "fr": "Toussaint" } },
+    { "id": "armistice",     "rule": { "fixed": "11-11" }, "name": { "en": "Armistice Day", "sk": "Deň prímeria", "fr": "Armistice 1918" } },
+    { "id": "christmas",     "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "fr": "Noël" } }
+  ]
+}

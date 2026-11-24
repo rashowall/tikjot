@@ -1,6 +1,6 @@
 # Security
 
-tikjot keeps your time data encrypted on your Mac and talks only to your own Jira. If you find a way around that —
+tikjot keeps your time data encrypted on your Mac and talks only to your own Jira (plus a daily update check on GitHub). If you find a way around that —
 for example a way to read the data or a Jira token, to send data anywhere else, or to make tikjot write to Jira
 without you pressing Send — please tell us privately:
 

@@ -1,0 +1,19 @@
+{
+  "country": "IE",
+  "name": { "en": "Ireland", "sk": "Írsko", "ga": "Éire" },
+  "source": "Organisation of Working Time Act 1997, Schedule 2, as amended (St Brigid's Day from 2023; one-off public holiday 18 March 2022, S.I. 2022); citizensinformation.ie Public holidays. Verified 2026-10-04.",
+  "notes": "A public holiday on a weekend does not move by law: the employee is entitled to a paid day off within a month, an extra day of annual leave or an extra day's pay (employer's choice). If your employer gives the next weekday off, add it as a company day.",
+  "holidays": [
+    { "id": "new-year",      "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok" } },
+    { "id": "st-brigid",     "rule": { "weekdayOnOrAfter": { "date": "02-01", "weekday": 1, "orIfWeekday": [5] } }, "validFrom": 2023, "name": { "en": "St Brigid's Day", "sk": "Sviatok svätej Brigity" } },
+    { "id": "covid-2022",    "rule": { "fixed": "03-18" }, "validFrom": 2022, "validTo": 2022, "name": { "en": "Public holiday of recognition (COVID-19)", "sk": "Deň uznania (COVID-19)" } },
+    { "id": "st-patrick",    "rule": { "fixed": "03-17" }, "name": { "en": "St Patrick's Day", "sk": "Sviatok svätého Patrika" } },
+    { "id": "easter-monday", "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok" } },
+    { "id": "may",           "rule": { "nthWeekday": { "month": 5, "weekday": 1, "n": 1 } },  "name": { "en": "May bank holiday", "sk": "Májový štátny voľný deň" } },
+    { "id": "june",          "rule": { "nthWeekday": { "month": 6, "weekday": 1, "n": 1 } },  "name": { "en": "June bank holiday", "sk": "Júnový štátny voľný deň" } },
+    { "id": "august",        "rule": { "nthWeekday": { "month": 8, "weekday": 1, "n": 1 } },  "name": { "en": "August bank holiday", "sk": "Augustový štátny voľný deň" } },
+    { "id": "october",       "rule": { "nthWeekday": { "month": 10, "weekday": 1, "n": -1 } }, "name": { "en": "October bank holiday", "sk": "Októbrový štátny voľný deň" } },
+    { "id": "christmas",     "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný" } },
+    { "id": "st-stephen",    "rule": { "fixed": "12-26" }, "name": { "en": "St Stephen's Day", "sk": "Druhý sviatok vianočný" } }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "country": "ES",
+  "name": { "en": "Spain", "sk": "Španielsko", "es": "España" },
+  "source": "Estatuto de los Trabajadores art. 37.2; Real Decreto 2001/1983 art. 45 (fiestas laborales de ámbito nacional); yearly BOE resolution of the Dirección General de Trabajo (for 2026: Resolución de 17 de octubre de 2025, BOE 28-10-2025). Verified 2026-10-04.",
+  "notes": "National holidays only. Each autonomous community adds its own (e.g. Holy Thursday almost everywhere, Easter Monday in Catalonia/Valencia/Basque Country, its national day) and may move a national holiday that falls on a Sunday to the Monday; each municipality adds 2 local days — add them as company days.",
+  "holidays": [
+    { "id": "new-year",     "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "es": "Año Nuevo" } },
+    { "id": "epiphany",     "rule": { "fixed": "01-06" }, "name": { "en": "Epiphany", "sk": "Zjavenie Pána (Traja králi)", "es": "Epifanía del Señor" } },
+    { "id": "good-friday",  "rule": { "easter": -2 },     "name": { "en": "Good Friday", "sk": "Veľký piatok", "es": "Viernes Santo" } },
+    { "id": "labour-day",   "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "es": "Fiesta del Trabajo" } },
+    { "id": "assumption",   "rule": { "fixed": "08-15" }, "name": { "en": "Assumption of Mary", "sk": "Nanebovzatie Panny Márie", "es": "Asunción de la Virgen" } },
+    { "id": "national-day", "rule": { "fixed": "10-12" }, "name": { "en": "National Day of Spain", "sk": "Štátny sviatok Španielska", "es": "Fiesta Nacional de España" } },
+    { "id": "all-saints",   "rule": { "fixed": "11-01" }, "name": { "en": "All Saints' Day", "sk": "Sviatok Všetkých svätých", "es": "Todos los Santos" } },
+    { "id": "constitution", "rule": { "fixed": "12-06" }, "name": { "en": "Constitution Day", "sk": "Deň Ústavy", "es": "Día de la Constitución Española" } },
+    { "id": "immaculate",   "rule": { "fixed": "12-08" }, "name": { "en": "Immaculate Conception", "sk": "Nepoškvrnené počatie Panny Márie", "es": "Inmaculada Concepción" } },
+    { "id": "christmas",    "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "es": "Natividad del Señor" } }
+  ]
+}

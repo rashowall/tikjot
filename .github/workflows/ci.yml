@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.4.app || true
+      - name: Package tests (domain, holidays, persistence, Jira, sync, suggestions)
+        working-directory: Packages/TikjotKit
+        # Package.resolved is the app's lockfile (Xcode adds Sparkle to it); plain `swift test` would drop that pin.
+        run: swift test --force-resolved-versions
+      - name: Install XcodeGen
+        run: brew install xcodegen
+      - name: Build app (unsigned)
+        run: |
+          xcodegen generate
+          xcodebuild -project tikjot.xcodeproj -scheme tikjot -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGN_IDENTITY="" DEVELOPMENT_TEAM="" build | tail -20
+      # App tests hosted in the app. Snapshot tests are skipped here: their references are rendered on the
+      # developer's macOS and the runner's macOS renders text differently. UI tests (tikjotUITests) need a
+      # logged-in GUI session with UI-automation permission, so they only run locally (scripts/build.sh test-ui).
+      - name: App unit tests (no snapshots, no UI tests)
+        env:
+          TEST_RUNNER_SNAPSHOT_SKIP: "1"
+        run: |
+          set -o pipefail
+          xcodebuild -project tikjot.xcodeproj -scheme tikjot -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGN_IDENTITY="" DEVELOPMENT_TEAM="" \
+            test -only-testing:tikjotTests | tail -30

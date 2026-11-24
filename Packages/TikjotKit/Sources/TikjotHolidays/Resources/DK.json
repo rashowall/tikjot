@@ -1,0 +1,17 @@
+{
+  "country": "DK",
+  "name": { "en": "Denmark", "sk": "Dánsko", "da": "Danmark" },
+  "source": "Folkekirkens helligdage (Lov om helligdage / Lukkeloven § 2); Great Prayer Day abolished from 2024 by Lov nr. 207 af 28. februar 2023 om ophævelse af lov om store bededag som helligdag. Verified 2026-10-04.",
+  "notes": "Easter Sunday and Whit Sunday are left out (always Sundays). Constitution Day (5 June), 1 May, Christmas Eve and New Year's Eve are not public holidays but are (half) days off under many collective agreements — add them as company days.",
+  "holidays": [
+    { "id": "new-year",          "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "da": "Nytårsdag" } },
+    { "id": "maundy-thursday",   "rule": { "easter": -3 },     "name": { "en": "Maundy Thursday", "sk": "Zelený štvrtok", "da": "Skærtorsdag" } },
+    { "id": "good-friday",       "rule": { "easter": -2 },     "name": { "en": "Good Friday", "sk": "Veľký piatok", "da": "Langfredag" } },
+    { "id": "easter-monday",     "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "da": "2. påskedag" } },
+    { "id": "great-prayer-day",  "rule": { "easter": 26 }, "validTo": 2023, "name": { "en": "Great Prayer Day", "sk": "Veľký modlitebný deň", "da": "Store bededag" } },
+    { "id": "ascension",         "rule": { "easter": 39 },     "name": { "en": "Ascension Day", "sk": "Nanebovstúpenie Pána", "da": "Kristi himmelfartsdag" } },
+    { "id": "whit-monday",       "rule": { "easter": 50 },     "name": { "en": "Whit Monday", "sk": "Svätodušný pondelok", "da": "2. pinsedag" } },
+    { "id": "christmas",         "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "da": "Juledag" } },
+    { "id": "st-stephen",        "rule": { "fixed": "12-26" }, "name": { "en": "Second Day of Christmas", "sk": "Druhý sviatok vianočný", "da": "2. juledag" } }
+  ]
+}

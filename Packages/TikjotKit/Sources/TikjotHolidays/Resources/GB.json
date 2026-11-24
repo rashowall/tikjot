@@ -1,0 +1,22 @@
+{
+  "country": "GB",
+  "name": { "en": "United Kingdom (England & Wales)", "sk": "Spojené kráľovstvo (Anglicko a Wales)" },
+  "source": "Banking and Financial Dealings Act 1971, Schedule 1, plus royal proclamations (one-off days 2020, 2022, 2023); gov.uk/bank-holidays (England and Wales). Verified 2026-10-04.",
+  "notes": "England and Wales only. Scotland (2 Jan, first Monday of August instead of last, St Andrew's Day) and Northern Ireland (St Patrick's Day, 12 July) differ. A bank holiday on a weekend moves to the next weekday ('substitute day').",
+  "substitute": "nextWorkday",
+  "holidays": [
+    { "id": "new-year",         "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok" } },
+    { "id": "good-friday",      "rule": { "easter": -2 },     "name": { "en": "Good Friday", "sk": "Veľký piatok" } },
+    { "id": "easter-monday",    "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok" } },
+    { "id": "early-may",        "rule": { "nthWeekday": { "month": 5, "weekday": 1, "n": 1 } }, "exceptYears": [2020], "name": { "en": "Early May bank holiday", "sk": "Májový štátny voľný deň" } },
+    { "id": "early-may-2020",   "rule": { "fixed": "05-08" }, "validFrom": 2020, "validTo": 2020, "name": { "en": "Early May bank holiday (VE Day)", "sk": "Májový štátny voľný deň (Deň víťazstva v Európe)" } },
+    { "id": "coronation-2023",  "rule": { "fixed": "05-08" }, "validFrom": 2023, "validTo": 2023, "name": { "en": "Bank holiday for the coronation of King Charles III", "sk": "Voľný deň pri korunovácii kráľa Karola III." } },
+    { "id": "spring",           "rule": { "nthWeekday": { "month": 5, "weekday": 1, "n": -1 } }, "exceptYears": [2022], "name": { "en": "Spring bank holiday", "sk": "Jarný štátny voľný deň" } },
+    { "id": "spring-2022",      "rule": { "fixed": "06-02" }, "validFrom": 2022, "validTo": 2022, "name": { "en": "Spring bank holiday", "sk": "Jarný štátny voľný deň" } },
+    { "id": "jubilee-2022",     "rule": { "fixed": "06-03" }, "validFrom": 2022, "validTo": 2022, "name": { "en": "Platinum Jubilee bank holiday", "sk": "Voľný deň pri platinovom jubileu kráľovnej" } },
+    { "id": "summer",           "rule": { "nthWeekday": { "month": 8, "weekday": 1, "n": -1 } }, "name": { "en": "Summer bank holiday", "sk": "Letný štátny voľný deň" } },
+    { "id": "queen-funeral-2022","rule": { "fixed": "09-19" }, "validFrom": 2022, "validTo": 2022, "name": { "en": "Bank holiday for the State Funeral of Queen Elizabeth II", "sk": "Voľný deň pri štátnom pohrebe kráľovnej Alžbety II." } },
+    { "id": "christmas",        "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný" } },
+    { "id": "boxing-day",       "rule": { "fixed": "12-26" }, "name": { "en": "Boxing Day", "sk": "Druhý sviatok vianočný" } }
+  ]
+}

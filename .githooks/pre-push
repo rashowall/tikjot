@@ -1,0 +1,12 @@
+#!/bin/bash
+# Refuses a push that would publish private things — see scripts/check-public.sh. Enable once per clone:
+#   git config core.hooksPath .githooks
+ZERO=0000000000000000000000000000000000000000
+while read -r local_ref local_sha remote_ref remote_sha; do
+  [ "$local_sha" = "$ZERO" ] && continue            # deleting a branch
+  if [ "$remote_sha" = "$ZERO" ]; then RANGE="$local_sha --not --remotes"; else RANGE="$remote_sha..$local_sha"; fi
+  scripts/check-public.sh "$RANGE" || { echo "Push stopped. Fix the commits above (or, if you are sure: git push --no-verify)."; exit 1; }
+done
+# Allowlist check of the files themselves: Jira keys and Slovak text must be invented, not real beta data.
+python3 scripts/check-public-tree.py || { echo "Push stopped. Replace the real data above (see scripts/check-public-tree.py)."; exit 1; }
+exit 0

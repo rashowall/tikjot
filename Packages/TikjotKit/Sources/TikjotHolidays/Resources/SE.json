@@ -1,0 +1,21 @@
+{
+  "country": "SE",
+  "name": { "en": "Sweden", "sk": "Švédsko", "sv": "Sverige" },
+  "source": "Lag (1989:253) om allmänna helgdagar (National Day a holiday from 2005, Whit Monday until 2004); Midsummer Eve, Christmas Eve and New Year's Eve are equated with Sundays by Semesterlag (1977:480) 3 a § and Arbetstidslag (1982:673). Verified 2026-10-04.",
+  "notes": "Easter Sunday and Whit Sunday (always Sundays) and Midsummer Day and All Saints' Day (always Saturdays) are left out. Midsummer Eve, Christmas Eve and New Year's Eve are not 'röda dagar' but are days off for almost everyone.",
+  "holidays": [
+    { "id": "new-year",       "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "sv": "Nyårsdagen" } },
+    { "id": "epiphany",       "rule": { "fixed": "01-06" }, "name": { "en": "Epiphany", "sk": "Zjavenie Pána (Traja králi)", "sv": "Trettondedag jul" } },
+    { "id": "good-friday",    "rule": { "easter": -2 },     "name": { "en": "Good Friday", "sk": "Veľký piatok", "sv": "Långfredagen" } },
+    { "id": "easter-monday",  "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "sv": "Annandag påsk" } },
+    { "id": "labour-day",     "rule": { "fixed": "05-01" }, "name": { "en": "May Day", "sk": "Sviatok práce", "sv": "Första maj" } },
+    { "id": "ascension",      "rule": { "easter": 39 },     "name": { "en": "Ascension Day", "sk": "Nanebovstúpenie Pána", "sv": "Kristi himmelsfärdsdag" } },
+    { "id": "whit-monday",    "rule": { "easter": 50 }, "validTo": 2004, "name": { "en": "Whit Monday", "sk": "Svätodušný pondelok", "sv": "Annandag pingst" } },
+    { "id": "national-day",   "rule": { "fixed": "06-06" }, "validFrom": 2005, "name": { "en": "National Day of Sweden", "sk": "Švédsky štátny sviatok", "sv": "Sveriges nationaldag" } },
+    { "id": "midsummer-eve",  "rule": { "weekdayOnOrAfter": { "date": "06-19", "weekday": 5 } }, "name": { "en": "Midsummer Eve", "sk": "Predvečer Jána (Midsommar)", "sv": "Midsommarafton" } },
+    { "id": "christmas-eve",  "rule": { "fixed": "12-24" }, "name": { "en": "Christmas Eve", "sk": "Štedrý deň", "sv": "Julafton" } },
+    { "id": "christmas",      "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "sv": "Juldagen" } },
+    { "id": "st-stephen",     "rule": { "fixed": "12-26" }, "name": { "en": "Boxing Day", "sk": "Druhý sviatok vianočný", "sv": "Annandag jul" } },
+    { "id": "new-years-eve",  "rule": { "fixed": "12-31" }, "name": { "en": "New Year's Eve", "sk": "Silvester", "sv": "Nyårsafton" } }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@ / %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ / %2$@"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ / %2$@"
+          }
+        }
+      }
+    },
+    "%@ of %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ of %2$@"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ z %2$@"
+          }
+        }
+      }
+    },
+    "%@–now" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@–teraz"
+          }
+        }
+      }
+    },
+    "%lld days not in Jira" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dni mimo Jiry: %lld"
+          }
+        }
+      }
+    },
+    "+%@" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%@"
+          }
+        }
+      }
+    },
+    "Continue %@" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokračovať %@"
+          }
+        }
+      }
+    },
+    "Continue last task" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokračovať v poslednej úlohe"
+          }
+        }
+      }
+    },
+    "of %@" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "z %@"
+          }
+        }
+      }
+    },
+    "Review & send" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odoslať do Jiry"
+          }
+        }
+      }
+    },
+    "RUNNING" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BEŽÍ"
+          }
+        }
+      }
+    },
+    "Sign in to Jira" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prihlás sa do Jiry"
+          }
+        }
+      }
+    },
+    "Stop %@" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zastaviť %@"
+          }
+        }
+      }
+    },
+    "Stop timer" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zastaviť časovač"
+          }
+        }
+      }
+    },
+    "Switch" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prepnúť"
+          }
+        }
+      }
+    },
+    "tikjot" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tikjot"
+          }
+        }
+      }
+    },
+    "TODAY" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DNES"
+          }
+        }
+      }
+    },
+    "Today against your day, what's running, one tap to stop or continue." : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dnešok voči tvojmu dňu, čo beží, jedno ťuknutie na zastavenie alebo pokračovanie."
+          }
+        }
+      }
+    },
+    "Tracking still works" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sledovanie funguje ďalej"
+          }
+        }
+      }
+    },
+    "Worked %@ of %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Worked %1$@ of %2$@"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odpracované %1$@ z %2$@"
+          }
+        }
+      }
+    },
+    "Worked %@ of %@, all in Jira" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Worked %1$@ of %2$@, all in Jira"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odpracované %1$@ z %2$@, všetko v Jire"
+          }
+        }
+      }
+    },
+    "Yesterday %@" : {
+      "localizations" : {
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Včera %@"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.2"
+}

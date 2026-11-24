@@ -1,0 +1,18 @@
+{
+  "expand": "schema,names", "startAt": 0, "maxResults": 50, "total": 1,
+  "issues": [
+    {
+      "expand": "operations", "id": "31337", "self": "https://jira.acme.com/rest/api/2/issue/31337", "key": "PMO-415",
+      "fields": {
+        "summary": "Steering committee preparation",
+        "issuetype": { "name": "Task", "subtask": false },
+        "status": { "name": "Done", "statusCategory": { "id": 3, "key": "done", "name": "Done" } },
+        "parent": { "id": "31000", "key": "PMO-400", "fields": { "summary": "Steering 2026" } },
+        "assignee": { "name": "jdoe", "key": "jdoe", "displayName": "Jane Doe" },
+        "timeoriginalestimate": 28800, "timespent": 30600,
+        "updated": "2026-09-30T16:02:11.000+0200",
+        "project": { "key": "PMO", "name": "Steering 2026" }
+      }
+    }
+  ]
+}

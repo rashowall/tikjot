@@ -1,0 +1,18 @@
+{
+  "country": "DE",
+  "name": { "en": "Germany", "sk": "Nemecko", "de": "Deutschland" },
+  "source": "Holidays common to the public-holiday laws (Feiertagsgesetze) of all 16 Länder; German Unity Day by Einigungsvertrag Art. 2 Abs. 2; one-off Reformation Day 2017 in all Länder. Verified 2026-10-04.",
+  "notes": "Nationwide days off only. The Länder add more: Epiphany (BW, BY, ST), International Women's Day (BE, MV), Corpus Christi (BW, BY, HE, NW, RP, SL, parts of SN/TH), Assumption (SL, parts of BY), World Children's Day (TH), Reformation Day (BB, HB, HH, MV, NI, SN, ST, SH, TH), All Saints' Day (BW, BY, NW, RP, SL), Repentance Day (SN), local days (e.g. Augsburg Peace Festival) — add them as company days.",
+  "holidays": [
+    { "id": "new-year",         "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "de": "Neujahr" } },
+    { "id": "good-friday",      "rule": { "easter": -2 },     "name": { "en": "Good Friday", "sk": "Veľký piatok", "de": "Karfreitag" } },
+    { "id": "easter-monday",    "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "de": "Ostermontag" } },
+    { "id": "labour-day",       "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "de": "Tag der Arbeit" } },
+    { "id": "ascension",        "rule": { "easter": 39 },     "name": { "en": "Ascension Day", "sk": "Nanebovstúpenie Pána", "de": "Christi Himmelfahrt" } },
+    { "id": "whit-monday",      "rule": { "easter": 50 },     "name": { "en": "Whit Monday", "sk": "Svätodušný pondelok", "de": "Pfingstmontag" } },
+    { "id": "unity-day",        "rule": { "fixed": "10-03" }, "name": { "en": "German Unity Day", "sk": "Deň nemeckej jednoty", "de": "Tag der Deutschen Einheit" } },
+    { "id": "reformation-2017", "rule": { "fixed": "10-31" }, "validFrom": 2017, "validTo": 2017, "name": { "en": "Reformation Day (500th anniversary)", "sk": "Deň reformácie (500. výročie)", "de": "Reformationstag (500. Jahrestag)" } },
+    { "id": "christmas",        "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "de": "1. Weihnachtstag" } },
+    { "id": "st-stephen",       "rule": { "fixed": "12-26" }, "name": { "en": "Second Day of Christmas", "sk": "Druhý sviatok vianočný", "de": "2. Weihnachtstag" } }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "country": "SI",
+  "name": { "en": "Slovenia", "sk": "Slovinsko", "sl": "Slovenija" },
+  "source": "Zakon o praznikih in dela prostih dnevih v Republiki Sloveniji (ZPDPD, Uradni list RS 112/05 – UPB, as amended; 2 January not a day off 2013–2016, restored by ZPDPD-H from 2017). Verified 2026-10-04.",
+  "notes": "Easter Sunday and Whit Sunday are left out (always Sundays). Holidays on a weekend are not moved.",
+  "holidays": [
+    { "id": "new-year",      "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "sl": "Novo leto" } },
+    { "id": "new-year-2",    "rule": { "fixed": "01-02" }, "exceptYears": [2013, 2014, 2015, 2016], "name": { "en": "New Year's Day (second day)", "sk": "Nový rok (druhý deň)", "sl": "Novo leto" } },
+    { "id": "preseren",      "rule": { "fixed": "02-08" }, "name": { "en": "Prešeren Day, Slovenian Cultural Holiday", "sk": "Prešernov deň, sviatok slovinskej kultúry", "sl": "Prešernov dan, slovenski kulturni praznik" } },
+    { "id": "easter-monday", "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "sl": "Velikonočni ponedeljek" } },
+    { "id": "resistance",    "rule": { "fixed": "04-27" }, "name": { "en": "Day of Uprising Against Occupation", "sk": "Deň odboja proti okupantovi", "sl": "Dan upora proti okupatorju" } },
+    { "id": "labour-day",    "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "sl": "Praznik dela" } },
+    { "id": "labour-day-2",  "rule": { "fixed": "05-02" }, "name": { "en": "Labour Day (second day)", "sk": "Sviatok práce (druhý deň)", "sl": "Praznik dela" } },
+    { "id": "statehood",     "rule": { "fixed": "06-25" }, "name": { "en": "Statehood Day", "sk": "Deň štátnosti", "sl": "Dan državnosti" } },
+    { "id": "assumption",    "rule": { "fixed": "08-15" }, "name": { "en": "Assumption of Mary", "sk": "Nanebovzatie Panny Márie", "sl": "Marijino vnebovzetje" } },
+    { "id": "reformation",   "rule": { "fixed": "10-31" }, "name": { "en": "Reformation Day", "sk": "Deň reformácie", "sl": "Dan reformacije" } },
+    { "id": "remembrance",   "rule": { "fixed": "11-01" }, "name": { "en": "Day of Remembrance for the Dead", "sk": "Deň spomienky na zosnulých", "sl": "Dan spomina na mrtve" } },
+    { "id": "christmas",     "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "sl": "Božič" } },
+    { "id": "independence",  "rule": { "fixed": "12-26" }, "name": { "en": "Independence and Unity Day", "sk": "Deň samostatnosti a jednoty", "sl": "Dan samostojnosti in enotnosti" } }
+  ]
+}

@@ -1,0 +1,17 @@
+SK11 = {
+'%1$lld entries tracked after %2$@': 'záznamy po %2$@: %1$lld',
+'%1$lld worklogs · %2$lld projects': 'worklogy: %1$lld · projekty: %2$lld',
+'Comes back': 'Vráti sa',
+"Couldn't open this snapshot.": 'Túto snímku sa nepodarilo otvoriť.',
+'English': 'English',
+'Go back to %1$@, %2$@?': 'Vrátiť sa do stavu %1$@, %2$@?',
+'Last backup file': 'Posledný súbor zálohy',
+'Restore from backup…': 'Obnoviť zo zálohy…',
+'Set aside': 'Odloží sa',
+'Slovenčina': 'Slovenčina',
+'Snapshot': 'Snímka',
+'Your data': 'Tvoje dáta',
+'choose the .tikjotbackup you exported': 'vyber exportovaný súbor .tikjotbackup',
+'locked with the same key': 'zamknuté tým istým kľúčom',
+"tikjot will look exactly like it did then. Anything you tracked after that is kept aside in a separate file, so you can't lose it.": 'tikjot bude vyzerať presne ako vtedy. Všetko, čo si zaznamenal potom, sa odloží do samostatného súboru, takže to nestratíš.',
+}

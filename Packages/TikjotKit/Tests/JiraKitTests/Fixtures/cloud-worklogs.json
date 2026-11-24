@@ -1,0 +1,32 @@
+{
+  "startAt": 0, "maxResults": 5000, "total": 2,
+  "worklogs": [
+    {
+      "self": "https://acme.atlassian.net/rest/api/3/issue/10010/worklog/20001",
+      "author": { "accountId": "5b10ac8d82e05b22cc7d4ef5", "displayName": "Martin Example", "active": true, "timeZone": "Europe/Bratislava" },
+      "updateAuthor": { "accountId": "5b10ac8d82e05b22cc7d4ef5", "displayName": "Martin Example" },
+      "comment": { "type": "doc", "version": 1, "content": [
+        { "type": "bulletList", "content": [
+          { "type": "listItem", "content": [ { "type": "paragraph", "content": [ { "type": "text", "text": "Sprint review" } ] } ] },
+          { "type": "listItem", "content": [ { "type": "paragraph", "content": [ { "type": "text", "text": "Release notes" } ] } ] }
+        ] }
+      ] },
+      "created": "2026-10-01T17:40:12.233+0200",
+      "updated": "2026-10-01T17:40:12.233+0200",
+      "started": "2026-10-01T09:15:00.000+0200",
+      "timeSpent": "1h 55m",
+      "timeSpentSeconds": 6900,
+      "id": "20001",
+      "issueId": "10010"
+    },
+    {
+      "author": { "accountId": "557058:other", "displayName": "Someone Else" },
+      "comment": { "type": "doc", "version": 1, "content": [ { "type": "paragraph", "content": [ { "type": "text", "text": "Their work" } ] } ] },
+      "updated": "2026-10-01T12:00:00.000+0200",
+      "started": "2026-10-01T10:00:00.000+0200",
+      "timeSpentSeconds": 3600,
+      "id": "20002",
+      "issueId": "10010"
+    }
+  ]
+}

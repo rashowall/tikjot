@@ -1,0 +1,12 @@
+{
+  "country": "CH",
+  "name": { "en": "Switzerland", "sk": "Švajčiarsko", "de": "Schweiz", "fr": "Suisse", "it": "Svizzera" },
+  "source": "Federal: Bundesverfassung Art. 110 Abs. 3 and Arbeitsgesetz Art. 20a (1 August, since 1994). The other three days are public holidays in all 26 cantons (cantonal laws; see swissfederalism.ch). Verified 2026-10-04.",
+  "notes": "Switzerland has one federal holiday (1 August); everything else is cantonal (up to 8 days per canton). Only the four days observed in every canton are listed. Most cantons also have Good Friday, Easter Monday, Whit Monday and 26 December, some Berchtoldstag (2 Jan), Corpus Christi, Assumption, All Saints, 8 Dec — add yours as company days.",
+  "holidays": [
+    { "id": "new-year",     "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "de": "Neujahr", "fr": "Nouvel An", "it": "Capodanno" } },
+    { "id": "ascension",    "rule": { "easter": 39 },     "name": { "en": "Ascension Day", "sk": "Nanebovstúpenie Pána", "de": "Auffahrt", "fr": "Ascension", "it": "Ascensione" } },
+    { "id": "national-day", "rule": { "fixed": "08-01" }, "name": { "en": "Swiss National Day", "sk": "Švajčiarsky štátny sviatok", "de": "Bundesfeier", "fr": "Fête nationale", "it": "Festa nazionale" } },
+    { "id": "christmas",    "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "de": "Weihnachten", "fr": "Noël", "it": "Natale" } }
+  ]
+}

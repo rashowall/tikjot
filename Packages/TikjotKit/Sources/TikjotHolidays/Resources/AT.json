@@ -1,0 +1,21 @@
+{
+  "country": "AT",
+  "name": { "en": "Austria", "sk": "Rakúsko", "de": "Österreich" },
+  "source": "Arbeitsruhegesetz (ARG, BGBl. 144/1983) § 7 Abs. 2 and Feiertagsruhegesetz 1957; Good Friday for Protestants repealed by BGBl. I 22/2019. Verified 2026-10-04.",
+  "notes": "Easter Sunday and Whit Sunday are left out (always Sundays). Since 2019 Good Friday is not a holiday; employees may take one 'persönlicher Feiertag' from their leave. Länder patron days and 24/31 Dec are off only by collective agreement — add them as company days.",
+  "holidays": [
+    { "id": "new-year",       "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "de": "Neujahr" } },
+    { "id": "epiphany",       "rule": { "fixed": "01-06" }, "name": { "en": "Epiphany", "sk": "Zjavenie Pána (Traja králi)", "de": "Heilige Drei Könige" } },
+    { "id": "easter-monday",  "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "de": "Ostermontag" } },
+    { "id": "labour-day",     "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "de": "Staatsfeiertag" } },
+    { "id": "ascension",      "rule": { "easter": 39 },     "name": { "en": "Ascension Day", "sk": "Nanebovstúpenie Pána", "de": "Christi Himmelfahrt" } },
+    { "id": "whit-monday",    "rule": { "easter": 50 },     "name": { "en": "Whit Monday", "sk": "Svätodušný pondelok", "de": "Pfingstmontag" } },
+    { "id": "corpus-christi", "rule": { "easter": 60 },     "name": { "en": "Corpus Christi", "sk": "Božie telo", "de": "Fronleichnam" } },
+    { "id": "assumption",     "rule": { "fixed": "08-15" }, "name": { "en": "Assumption of Mary", "sk": "Nanebovzatie Panny Márie", "de": "Mariä Himmelfahrt" } },
+    { "id": "national-day",   "rule": { "fixed": "10-26" }, "name": { "en": "Austrian National Day", "sk": "Rakúsky štátny sviatok", "de": "Nationalfeiertag" } },
+    { "id": "all-saints",     "rule": { "fixed": "11-01" }, "name": { "en": "All Saints' Day", "sk": "Sviatok Všetkých svätých", "de": "Allerheiligen" } },
+    { "id": "immaculate",     "rule": { "fixed": "12-08" }, "name": { "en": "Immaculate Conception", "sk": "Nepoškvrnené počatie Panny Márie", "de": "Mariä Empfängnis" } },
+    { "id": "christmas",      "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "de": "Christtag" } },
+    { "id": "st-stephen",     "rule": { "fixed": "12-26" }, "name": { "en": "St. Stephen's Day", "sk": "Druhý sviatok vianočný", "de": "Stefanitag" } }
+  ]
+}

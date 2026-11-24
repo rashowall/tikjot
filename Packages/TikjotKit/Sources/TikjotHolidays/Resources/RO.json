@@ -1,0 +1,23 @@
+{
+  "country": "RO",
+  "name": { "en": "Romania", "sk": "Rumunsko", "ro": "România" },
+  "source": "Codul muncii (Legea 53/2003), art. 139 (24 Jan and 1 Jun from 2017, Orthodox Good Friday from 2018, 6 and 7 Jan by Legea 52/2023 from 2024). Verified 2026-10-04.",
+  "notes": "Easter and Pentecost follow the Orthodox calendar; their Sundays are left out (always Sundays). Two holidays on one day (e.g. 1 June = Whit Monday in 2026) count as one day off. Members of non-Christian denominations get extra days — add them as company days.",
+  "holidays": [
+    { "id": "new-year",        "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "ro": "Anul Nou" } },
+    { "id": "new-year-2",      "rule": { "fixed": "01-02" }, "name": { "en": "Day after New Year's Day", "sk": "Druhý deň Nového roka", "ro": "A doua zi de Anul Nou" } },
+    { "id": "epiphany",        "rule": { "fixed": "01-06" }, "validFrom": 2024, "name": { "en": "Epiphany", "sk": "Zjavenie Pána (Krst Pána)", "ro": "Boboteaza" } },
+    { "id": "st-john",         "rule": { "fixed": "01-07" }, "validFrom": 2024, "name": { "en": "Synaxis of St. John the Baptist", "sk": "Sviatok svätého Jána Krstiteľa", "ro": "Soborul Sfântului Proroc Ioan Botezătorul" } },
+    { "id": "union-day",       "rule": { "fixed": "01-24" }, "validFrom": 2017, "name": { "en": "Union of the Romanian Principalities", "sk": "Deň zjednotenia rumunských kniežatstiev", "ro": "Ziua Unirii Principatelor Române" } },
+    { "id": "good-friday",     "rule": { "orthodoxEaster": -2 }, "validFrom": 2018, "name": { "en": "Orthodox Good Friday", "sk": "Veľký piatok (pravoslávny)", "ro": "Vinerea Mare" } },
+    { "id": "easter-monday",   "rule": { "orthodoxEaster": 1 },  "name": { "en": "Orthodox Easter Monday", "sk": "Veľkonočný pondelok (pravoslávny)", "ro": "A doua zi de Paști" } },
+    { "id": "labour-day",      "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "ro": "Ziua Muncii" } },
+    { "id": "children-day",    "rule": { "fixed": "06-01" }, "validFrom": 2017, "name": { "en": "Children's Day", "sk": "Deň detí", "ro": "Ziua Copilului" } },
+    { "id": "whit-monday",     "rule": { "orthodoxEaster": 50 }, "name": { "en": "Orthodox Whit Monday", "sk": "Svätodušný pondelok (pravoslávny)", "ro": "A doua zi de Rusalii" } },
+    { "id": "assumption",      "rule": { "fixed": "08-15" }, "name": { "en": "Dormition of the Mother of God", "sk": "Nanebovzatie Panny Márie", "ro": "Adormirea Maicii Domnului" } },
+    { "id": "st-andrew",       "rule": { "fixed": "11-30" }, "name": { "en": "St. Andrew's Day", "sk": "Sviatok svätého Ondreja", "ro": "Sfântul Andrei" } },
+    { "id": "national-day",    "rule": { "fixed": "12-01" }, "name": { "en": "National Day of Romania", "sk": "Štátny sviatok Rumunska", "ro": "Ziua Națională a României" } },
+    { "id": "christmas",       "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "ro": "Crăciunul" } },
+    { "id": "st-stephen",      "rule": { "fixed": "12-26" }, "name": { "en": "Second Day of Christmas", "sk": "Druhý sviatok vianočný", "ro": "A doua zi de Crăciun" } }
+  ]
+}

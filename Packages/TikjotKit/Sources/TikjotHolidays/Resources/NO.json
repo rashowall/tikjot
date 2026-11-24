@@ -1,0 +1,18 @@
+{
+  "country": "NO",
+  "name": { "en": "Norway", "sk": "Nórsko", "nb": "Norge" },
+  "source": "Lov om helligdager og helligdagsfred (LOV-1995-02-24-32) § 2 and Lov om 1. og 17. mai som høgtidsdager (LOV-1947-04-26-1). Verified 2026-10-04.",
+  "notes": "Easter Sunday and Whit Sunday are left out (always Sundays). Christmas Eve and New Year's Eve are commonly half or full days off by agreement — add them as company days.",
+  "holidays": [
+    { "id": "new-year",        "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "nb": "Første nyttårsdag" } },
+    { "id": "maundy-thursday", "rule": { "easter": -3 },     "name": { "en": "Maundy Thursday", "sk": "Zelený štvrtok", "nb": "Skjærtorsdag" } },
+    { "id": "good-friday",     "rule": { "easter": -2 },     "name": { "en": "Good Friday", "sk": "Veľký piatok", "nb": "Langfredag" } },
+    { "id": "easter-monday",   "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "nb": "Andre påskedag" } },
+    { "id": "labour-day",      "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "nb": "Offentlig høytidsdag" } },
+    { "id": "constitution",    "rule": { "fixed": "05-17" }, "name": { "en": "Constitution Day", "sk": "Deň Ústavy", "nb": "Grunnlovsdag" } },
+    { "id": "ascension",       "rule": { "easter": 39 },     "name": { "en": "Ascension Day", "sk": "Nanebovstúpenie Pána", "nb": "Kristi himmelfartsdag" } },
+    { "id": "whit-monday",     "rule": { "easter": 50 },     "name": { "en": "Whit Monday", "sk": "Svätodušný pondelok", "nb": "Andre pinsedag" } },
+    { "id": "christmas",       "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "nb": "Første juledag" } },
+    { "id": "st-stephen",      "rule": { "fixed": "12-26" }, "name": { "en": "Second Day of Christmas", "sk": "Druhý sviatok vianočný", "nb": "Andre juledag" } }
+  ]
+}

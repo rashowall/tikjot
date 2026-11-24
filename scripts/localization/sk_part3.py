@@ -1,0 +1,15 @@
+SK3 = {
+"Couldn't save — %@": 'Nepodarilo sa uložiť — %@',
+'Undone': 'Vrátené späť',
+'Under a minute — not kept': 'Menej ako minúta — neuložené',
+'Stopped · %@': 'Zastavené · %@',
+"Marked as a break · doesn't count": 'Označené ako prestávka · nepočíta sa',
+'%@ added': 'Pridané: %@',
+'Absence removed': 'Neprítomnosť odstránená',
+'%1$@ merged into %2$@': '%1$@ zlúčený do %2$@',
+"%1$@ moved — it's %2$@ now": '%1$@ sa presunula — teraz je to %2$@',
+'Taking worklogs back out of Jira…': 'Vraciam worklogy späť z Jiry…',
+'Back out of Jira — nothing lost here': 'Späť z Jiry — tu sa nič nestratilo',
+'Entries deleted: %lld': 'Zmazané záznamy: %lld',
+'Entry deleted': 'Záznam zmazaný',
+}

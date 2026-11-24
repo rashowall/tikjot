@@ -1,0 +1,16 @@
+{
+  "country": "NL",
+  "name": { "en": "Netherlands", "sk": "Holandsko", "nl": "Nederland" },
+  "source": "Algemene termijnenwet art. 3 (algemeen erkende feestdagen) and rijksoverheid.nl 'Officiële feestdagen'; King's Day by Besluit van 2013 (27 April from 2014). Verified 2026-10-04.",
+  "notes": "Dutch law does not grant days off itself — the CAO / employment contract does; these are the days commonly off. Easter Sunday and Whit Sunday are left out (always Sundays). Good Friday and Liberation Day (5 May; in many CAOs only every 5 years, e.g. 2025, 2030) are off only if your CAO says so — add them as company days. King's/Queen's Day on a Sunday moves to Saturday, so it never lands on a workday.",
+  "holidays": [
+    { "id": "new-year",      "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "nl": "Nieuwjaarsdag" } },
+    { "id": "easter-monday", "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "nl": "Tweede paasdag" } },
+    { "id": "kings-day",     "rule": { "fixed": "04-27" }, "validFrom": 2014, "name": { "en": "King's Day", "sk": "Kráľov deň", "nl": "Koningsdag" } },
+    { "id": "queens-day",    "rule": { "fixed": "04-30" }, "validTo": 2013,   "name": { "en": "Queen's Day", "sk": "Kráľovnin deň", "nl": "Koninginnedag" } },
+    { "id": "ascension",     "rule": { "easter": 39 },     "name": { "en": "Ascension Day", "sk": "Nanebovstúpenie Pána", "nl": "Hemelvaartsdag" } },
+    { "id": "whit-monday",   "rule": { "easter": 50 },     "name": { "en": "Whit Monday", "sk": "Svätodušný pondelok", "nl": "Tweede pinksterdag" } },
+    { "id": "christmas",     "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "nl": "Eerste kerstdag" } },
+    { "id": "st-stephen",    "rule": { "fixed": "12-26" }, "name": { "en": "Second Day of Christmas", "sk": "Druhý sviatok vianočný", "nl": "Tweede kerstdag" } }
+  ]
+}

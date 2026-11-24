@@ -1,0 +1,20 @@
+{
+  "country": "PT",
+  "name": { "en": "Portugal", "sk": "Portugalsko", "pt": "Portugal" },
+  "source": "Código do Trabalho (Lei 7/2009), art. 234 (feriados obrigatórios); four holidays suspended 2013–2015 by Lei 23/2012 and restored by Lei 8/2016. Verified 2026-10-04.",
+  "notes": "Easter Sunday is left out (always a Sunday). Carnival Tuesday is optional (often granted, e.g. to civil servants) and each municipality has its own holiday (e.g. 13 June Lisbon, 24 June Porto) — add them as company days.",
+  "holidays": [
+    { "id": "new-year",       "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "pt": "Ano Novo" } },
+    { "id": "good-friday",    "rule": { "easter": -2 },     "name": { "en": "Good Friday", "sk": "Veľký piatok", "pt": "Sexta-feira Santa" } },
+    { "id": "freedom-day",    "rule": { "fixed": "04-25" }, "name": { "en": "Freedom Day", "sk": "Deň slobody", "pt": "Dia da Liberdade" } },
+    { "id": "labour-day",     "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "pt": "Dia do Trabalhador" } },
+    { "id": "corpus-christi", "rule": { "easter": 60 }, "exceptYears": [2013, 2014, 2015], "name": { "en": "Corpus Christi", "sk": "Božie telo", "pt": "Corpo de Deus" } },
+    { "id": "portugal-day",   "rule": { "fixed": "06-10" }, "name": { "en": "Portugal Day", "sk": "Deň Portugalska", "pt": "Dia de Portugal, de Camões e das Comunidades Portuguesas" } },
+    { "id": "assumption",     "rule": { "fixed": "08-15" }, "name": { "en": "Assumption of Mary", "sk": "Nanebovzatie Panny Márie", "pt": "Assunção de Nossa Senhora" } },
+    { "id": "republic-day",   "rule": { "fixed": "10-05" }, "exceptYears": [2013, 2014, 2015], "name": { "en": "Republic Day", "sk": "Deň republiky", "pt": "Implantação da República" } },
+    { "id": "all-saints",     "rule": { "fixed": "11-01" }, "exceptYears": [2013, 2014, 2015], "name": { "en": "All Saints' Day", "sk": "Sviatok Všetkých svätých", "pt": "Dia de Todos-os-Santos" } },
+    { "id": "restoration",    "rule": { "fixed": "12-01" }, "exceptYears": [2013, 2014, 2015], "name": { "en": "Restoration of Independence", "sk": "Deň obnovenia nezávislosti", "pt": "Restauração da Independência" } },
+    { "id": "immaculate",     "rule": { "fixed": "12-08" }, "name": { "en": "Immaculate Conception", "sk": "Nepoškvrnené počatie Panny Márie", "pt": "Imaculada Conceição" } },
+    { "id": "christmas",      "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "pt": "Natal" } }
+  ]
+}

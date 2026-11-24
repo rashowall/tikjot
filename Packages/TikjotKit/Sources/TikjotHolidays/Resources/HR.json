@@ -1,0 +1,23 @@
+{
+  "country": "HR",
+  "name": { "en": "Croatia", "sk": "Chorvátsko", "hr": "Hrvatska" },
+  "source": "Zakon o blagdanima, spomendanima i neradnim danima u Republici Hrvatskoj (NN 110/2019, from 2020: Statehood Day moved to 30 May, Remembrance Day 18 Nov added, 25 Jun and 8 Oct no longer days off). Verified 2026-10-04.",
+  "notes": "Easter Sunday is left out (always a Sunday). Orthodox, Muslim and Jewish employees may take their own religious holidays instead — add them as company days.",
+  "holidays": [
+    { "id": "new-year",        "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "hr": "Nova godina" } },
+    { "id": "epiphany",        "rule": { "fixed": "01-06" }, "name": { "en": "Epiphany", "sk": "Zjavenie Pána (Traja králi)", "hr": "Bogojavljenje ili Sveta tri kralja" } },
+    { "id": "easter-monday",   "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "hr": "Uskršnji ponedjeljak" } },
+    { "id": "labour-day",      "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "hr": "Praznik rada" } },
+    { "id": "statehood",       "rule": { "fixed": "05-30" }, "validFrom": 2020, "name": { "en": "Statehood Day", "sk": "Deň štátnosti", "hr": "Dan državnosti" } },
+    { "id": "corpus-christi",  "rule": { "easter": 60 },     "name": { "en": "Corpus Christi", "sk": "Božie telo", "hr": "Tijelovo" } },
+    { "id": "anti-fascist",    "rule": { "fixed": "06-22" }, "name": { "en": "Anti-Fascist Struggle Day", "sk": "Deň antifašistického boja", "hr": "Dan antifašističke borbe" } },
+    { "id": "statehood-old",   "rule": { "fixed": "06-25" }, "validTo": 2019, "name": { "en": "Statehood Day", "sk": "Deň štátnosti", "hr": "Dan državnosti" } },
+    { "id": "victory",         "rule": { "fixed": "08-05" }, "name": { "en": "Victory and Homeland Thanksgiving Day", "sk": "Deň víťazstva a vlasteneckej vďaky", "hr": "Dan pobjede i domovinske zahvalnosti i Dan hrvatskih branitelja" } },
+    { "id": "assumption",      "rule": { "fixed": "08-15" }, "name": { "en": "Assumption of Mary", "sk": "Nanebovzatie Panny Márie", "hr": "Velika Gospa" } },
+    { "id": "independence",    "rule": { "fixed": "10-08" }, "validTo": 2019, "name": { "en": "Independence Day", "sk": "Deň nezávislosti", "hr": "Dan neovisnosti" } },
+    { "id": "all-saints",      "rule": { "fixed": "11-01" }, "name": { "en": "All Saints' Day", "sk": "Sviatok Všetkých svätých", "hr": "Svi sveti" } },
+    { "id": "remembrance",     "rule": { "fixed": "11-18" }, "validFrom": 2020, "name": { "en": "Remembrance Day (Vukovar and Škabrnja)", "sk": "Deň pamiatky obetí vlasteneckej vojny", "hr": "Dan sjećanja na žrtve Domovinskog rata i Dan sjećanja na žrtvu Vukovara i Škabrnje" } },
+    { "id": "christmas",       "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "hr": "Božić" } },
+    { "id": "st-stephen",      "rule": { "fixed": "12-26" }, "name": { "en": "St. Stephen's Day", "sk": "Druhý sviatok vianočný", "hr": "Sveti Stjepan" } }
+  ]
+}

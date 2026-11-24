@@ -1,0 +1,19 @@
+{
+  "country": "HU",
+  "name": { "en": "Hungary", "sk": "Maďarsko", "hu": "Magyarország" },
+  "source": "2012. évi I. törvény a munka törvénykönyvéről, 102. § (1) (Good Friday from 2017). Verified 2026-10-04.",
+  "notes": "Easter Sunday and Pentecost Sunday are left out (always Sundays). Bridge days moved by the yearly ministerial decree (áthelyezett munkanapok, e.g. 2026: 2 Jan, 21 Aug, 24 Dec, worked on a Saturday instead) are not included — add them as company days.",
+  "holidays": [
+    { "id": "new-year",         "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "hu": "Újév" } },
+    { "id": "revolution-1848",  "rule": { "fixed": "03-15" }, "name": { "en": "1848 Revolution Memorial Day", "sk": "Výročie revolúcie 1848", "hu": "Az 1848-as forradalom ünnepe" } },
+    { "id": "good-friday",      "rule": { "easter": -2 }, "validFrom": 2017, "name": { "en": "Good Friday", "sk": "Veľký piatok", "hu": "Nagypéntek" } },
+    { "id": "easter-monday",    "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "hu": "Húsvéthétfő" } },
+    { "id": "labour-day",       "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "hu": "A munka ünnepe" } },
+    { "id": "whit-monday",      "rule": { "easter": 50 },     "name": { "en": "Whit Monday", "sk": "Svätodušný pondelok", "hu": "Pünkösdhétfő" } },
+    { "id": "state-foundation", "rule": { "fixed": "08-20" }, "name": { "en": "State Foundation Day", "sk": "Deň založenia štátu", "hu": "Az államalapítás ünnepe" } },
+    { "id": "revolution-1956",  "rule": { "fixed": "10-23" }, "name": { "en": "1956 Revolution Memorial Day", "sk": "Výročie revolúcie 1956", "hu": "Az 1956-os forradalom ünnepe" } },
+    { "id": "all-saints",       "rule": { "fixed": "11-01" }, "name": { "en": "All Saints' Day", "sk": "Sviatok Všetkých svätých", "hu": "Mindenszentek" } },
+    { "id": "christmas",        "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "hu": "Karácsony" } },
+    { "id": "st-stephen",       "rule": { "fixed": "12-26" }, "name": { "en": "Second Day of Christmas", "sk": "Druhý sviatok vianočný", "hu": "Karácsony másnapja" } }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "country": "IT",
+  "name": { "en": "Italy", "sk": "Taliansko", "it": "Italia" },
+  "source": "Legge 27 maggio 1949 n. 260, as amended (L. 54/1977, DPR 792/1985, L. 336/2000); St Francis of Assisi (4 October) restored by Legge 8 ottobre 2025 n. 151 from 2026. Verified 2026-10-04.",
+  "notes": "Easter Sunday is left out (always a Sunday). The patron saint's day of your town (e.g. 29 June Rome, 7 December Milan) is also a day off — add it as a company day. A holiday on a Sunday is paid extra, not moved.",
+  "holidays": [
+    { "id": "new-year",      "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "it": "Capodanno" } },
+    { "id": "epiphany",      "rule": { "fixed": "01-06" }, "name": { "en": "Epiphany", "sk": "Zjavenie Pána (Traja králi)", "it": "Epifania" } },
+    { "id": "easter-monday", "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "it": "Lunedì dell'Angelo" } },
+    { "id": "liberation",    "rule": { "fixed": "04-25" }, "name": { "en": "Liberation Day", "sk": "Deň oslobodenia", "it": "Festa della Liberazione" } },
+    { "id": "labour-day",    "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce", "it": "Festa del Lavoro" } },
+    { "id": "republic-day",  "rule": { "fixed": "06-02" }, "name": { "en": "Republic Day", "sk": "Deň republiky", "it": "Festa della Repubblica" } },
+    { "id": "assumption",    "rule": { "fixed": "08-15" }, "name": { "en": "Assumption of Mary", "sk": "Nanebovzatie Panny Márie", "it": "Assunzione di Maria (Ferragosto)" } },
+    { "id": "st-francis",    "rule": { "fixed": "10-04" }, "validFrom": 2026, "name": { "en": "St Francis of Assisi, Patron Saint of Italy", "sk": "Sviatok svätého Františka z Assisi", "it": "San Francesco d'Assisi, patrono d'Italia" } },
+    { "id": "all-saints",    "rule": { "fixed": "11-01" }, "name": { "en": "All Saints' Day", "sk": "Sviatok Všetkých svätých", "it": "Ognissanti" } },
+    { "id": "immaculate",    "rule": { "fixed": "12-08" }, "name": { "en": "Immaculate Conception", "sk": "Nepoškvrnené počatie Panny Márie", "it": "Immacolata Concezione" } },
+    { "id": "christmas",     "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "it": "Natale" } },
+    { "id": "st-stephen",    "rule": { "fixed": "12-26" }, "name": { "en": "St. Stephen's Day", "sk": "Druhý sviatok vianočný", "it": "Santo Stefano" } }
+  ]
+}

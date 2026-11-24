@@ -1,0 +1,19 @@
+{
+  "country": "FI",
+  "name": { "en": "Finland", "sk": "Fínsko", "fi": "Suomi" },
+  "source": "Church holidays by Kirkkolaki and Laki itsenäisyyspäivän ja vapunpäivän viettämisestä; Midsummer Eve and Christmas Eve as non-working days by Vuosilomalaki (162/2005) and collective agreements. Verified 2026-10-04.",
+  "notes": "Easter Sunday and Whit Sunday (always Sundays) and Midsummer Day and All Saints' Day (always Saturdays) are left out. Midsummer Eve and Christmas Eve are not official holidays but are days off for almost everyone.",
+  "holidays": [
+    { "id": "new-year",       "rule": { "fixed": "01-01" }, "name": { "en": "New Year's Day", "sk": "Nový rok", "fi": "Uudenvuodenpäivä" } },
+    { "id": "epiphany",       "rule": { "fixed": "01-06" }, "name": { "en": "Epiphany", "sk": "Zjavenie Pána (Traja králi)", "fi": "Loppiainen" } },
+    { "id": "good-friday",    "rule": { "easter": -2 },     "name": { "en": "Good Friday", "sk": "Veľký piatok", "fi": "Pitkäperjantai" } },
+    { "id": "easter-monday",  "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok", "fi": "Toinen pääsiäispäivä" } },
+    { "id": "may-day",        "rule": { "fixed": "05-01" }, "name": { "en": "May Day", "sk": "Sviatok práce", "fi": "Vappu" } },
+    { "id": "ascension",      "rule": { "easter": 39 },     "name": { "en": "Ascension Day", "sk": "Nanebovstúpenie Pána", "fi": "Helatorstai" } },
+    { "id": "midsummer-eve",  "rule": { "weekdayOnOrAfter": { "date": "06-19", "weekday": 5 } }, "name": { "en": "Midsummer Eve", "sk": "Predvečer Jána (Juhannus)", "fi": "Juhannusaatto" } },
+    { "id": "independence",   "rule": { "fixed": "12-06" }, "name": { "en": "Independence Day", "sk": "Deň nezávislosti", "fi": "Itsenäisyyspäivä" } },
+    { "id": "christmas-eve",  "rule": { "fixed": "12-24" }, "name": { "en": "Christmas Eve", "sk": "Štedrý deň", "fi": "Jouluaatto" } },
+    { "id": "christmas",      "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný", "fi": "Joulupäivä" } },
+    { "id": "st-stephen",     "rule": { "fixed": "12-26" }, "name": { "en": "St. Stephen's Day", "sk": "Druhý sviatok vianočný", "fi": "Tapaninpäivä" } }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "country": "SK",
+  "name": { "en": "Slovakia", "sk": "Slovensko" },
+  "source": "Zákon 241/1993 Z. z. o štátnych sviatkoch, dňoch pracovného pokoja a pamätných dňoch, as amended (incl. 261/2025 Z. z.). Verified 2026-10-04.",
+  "notes": "Only days off (dni pracovného pokoja) are listed. Holidays that stay state holidays but are working days are closed with validTo.",
+  "holidays": [
+    { "id": "new-year",        "rule": { "fixed": "01-01" }, "name": { "en": "Day of the Establishment of the Slovak Republic", "sk": "Deň vzniku Slovenskej republiky" } },
+    { "id": "epiphany",        "rule": { "fixed": "01-06" }, "name": { "en": "Epiphany", "sk": "Zjavenie Pána (Traja králi)" } },
+    { "id": "good-friday",     "rule": { "easter": -2 },     "name": { "en": "Good Friday", "sk": "Veľký piatok" } },
+    { "id": "easter-monday",   "rule": { "easter": 1 },      "name": { "en": "Easter Monday", "sk": "Veľkonočný pondelok" } },
+    { "id": "labour-day",      "rule": { "fixed": "05-01" }, "name": { "en": "Labour Day", "sk": "Sviatok práce" } },
+    { "id": "victory-day",     "rule": { "fixed": "05-08" }, "validTo": 2025, "name": { "en": "Day of Victory over Fascism", "sk": "Deň víťazstva nad fašizmom" } },
+    { "id": "cyril-methodius", "rule": { "fixed": "07-05" }, "name": { "en": "St. Cyril and Methodius Day", "sk": "Sviatok svätého Cyrila a svätého Metoda" } },
+    { "id": "snp",             "rule": { "fixed": "08-29" }, "name": { "en": "Slovak National Uprising Anniversary", "sk": "Výročie Slovenského národného povstania" } },
+    { "id": "constitution",    "rule": { "fixed": "09-01" }, "validTo": 2023, "name": { "en": "Constitution Day", "sk": "Deň Ústavy Slovenskej republiky" } },
+    { "id": "our-lady",        "rule": { "fixed": "09-15" }, "validTo": 2025, "name": { "en": "Our Lady of the Seven Sorrows", "sk": "Sedembolestná Panna Mária" } },
+    { "id": "all-saints",      "rule": { "fixed": "11-01" }, "name": { "en": "All Saints' Day", "sk": "Sviatok Všetkých svätých" } },
+    { "id": "freedom-day",     "rule": { "fixed": "11-17" }, "validTo": 2024, "name": { "en": "Struggle for Freedom and Democracy Day", "sk": "Deň boja za slobodu a demokraciu" } },
+    { "id": "christmas-eve",   "rule": { "fixed": "12-24" }, "name": { "en": "Christmas Eve", "sk": "Štedrý deň" } },
+    { "id": "christmas",       "rule": { "fixed": "12-25" }, "name": { "en": "Christmas Day", "sk": "Prvý sviatok vianočný" } },
+    { "id": "st-stephen",      "rule": { "fixed": "12-26" }, "name": { "en": "St. Stephen's Day", "sk": "Druhý sviatok vianočný" } }
+  ]
+}
