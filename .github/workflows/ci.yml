@@ -8,11 +8,13 @@ on:
 
 jobs:
   test:
-    runs-on: macos-15
+    # On push only in the public repo (free minutes); the private dev repo runs it by hand or on a PR.
+    if: github.event_name != 'push' || github.repository == 'rashowall/tikjot'
+    runs-on: macos-26  # the app needs the macOS 26 SDK (Liquid Glass) — Xcode 26 or newer
     steps:
       - uses: actions/checkout@v4
-      - name: Select Xcode
-        run: sudo xcode-select -s /Applications/Xcode_16.4.app || true
+      - name: Xcode version
+        run: xcodebuild -version
       - name: Package tests (domain, holidays, persistence, Jira, sync, suggestions)
         working-directory: Packages/TikjotKit
         # Package.resolved is the app's lockfile (Xcode adds Sparkle to it); plain `swift test` would drop that pin.
@@ -21,6 +23,7 @@ jobs:
         run: brew install xcodegen
       - name: Build app (unsigned)
         run: |
+          set -o pipefail
           xcodegen generate
           xcodebuild -project tikjot.xcodeproj -scheme tikjot -configuration Debug \
             CODE_SIGNING_ALLOWED=NO CODE_SIGN_IDENTITY="" DEVELOPMENT_TEAM="" build | tail -20
